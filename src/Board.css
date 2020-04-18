@@ -100,11 +100,28 @@ table tr:last-child td:last-child {
     .neon-blue {
         font-size: 70px;
     }
+
+    .winner .neon-orange,
+    .winner .neon-blue {
+        font-size: 100px;
+    }
 }
 
 @media (max-width: 480px) {
     .neon-orange,
     .neon-blue {
         font-size: 60px;
+    }
+
+    .winner .neon-orange,
+    .winner .neon-blue {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 380px) {
+    .winner .neon-orange,
+    .winner .neon-blue {
+        font-size: 70px;
     }
 }
