@@ -94,3 +94,17 @@ table tr:last-child td:last-child {
         color: #146C80;
     }
 }
+
+@media (max-width: 768px) {
+    .neon-orange,
+    .neon-blue {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .neon-orange,
+    .neon-blue {
+        font-size: 60px;
+    }
+}
