@@ -16,6 +16,8 @@ class Board extends Component {
       hasWon: false,
       board: this.createBoard(),
     };
+
+    this.restart = this.restart.bind(this);
   }
 
   createBoard() {
@@ -57,6 +59,10 @@ class Board extends Component {
     let hasWon = board.every(row => row.every(cell => !cell));
 
     this.setState({ board, hasWon });
+  }
+
+  restart() {
+    this.setState({ board: this.createBoard(), hasWon: false });
   }
 
   makeTable() {
@@ -102,6 +108,7 @@ class Board extends Component {
             {this.makeTable()}
           </div>
         )}
+        <button className="Board-restart" onClick={this.restart}>Restart</button>
       </div>
     );
   }
